@@ -1,0 +1,26 @@
+{
+  "name": "basic-mern-app",
+  "version": "1.0.0",
+  "description": "This repository is meant to serve as a basic fullstack react application reference for personal projects and cooperative learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modern-sapien/basic-mern-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modern-sapien/basic-mern-app/issues"
+  },
+  "homepage": "https://github.com/modern-sapien/basic-mern-app#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.10.15"
+  }
+}
