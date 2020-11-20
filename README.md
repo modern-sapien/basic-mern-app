@@ -10,5 +10,9 @@ This repository is meant to serve as a basic fullstack react application referen
         *   npm install express mongoose dotenv if-env
 
     2.  Build out basic server
-        *   server to run on port 3001 to not conflict with react
+        *   server to run on port 3001 to not conflict with react when it runs
+    
+    3.  After the server has been setup, add create-react-app client on top
+        * In the root, run "npx create-react-app client --use-npm"
+
 ## 
