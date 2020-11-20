@@ -2,7 +2,7 @@
   "name": "basic-mern-app",
   "version": "1.0.0",
   "description": "This repository is meant to serve as a basic fullstack react application reference for personal projects and cooperative learning",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -24,7 +24,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.10.15"
+    "mongoose": "^5.10.15",
+    "nodemon": "^2.0.6"
   },
   "devDependencies": {
     "concurrently": "^5.3.0"

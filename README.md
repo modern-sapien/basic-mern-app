@@ -4,7 +4,7 @@ This repository is meant to serve as a basic fullstack react application referen
 ## Goal: Full Stack MERN APP 
 
 ## Process
-     1. Set up server
+    1. Set up server
         *   create server.js file
         *   npm init -y
         *   npm install express mongoose dotenv if-env
@@ -16,8 +16,15 @@ This repository is meant to serve as a basic fullstack react application referen
         * In the root, run "npx create-react-app client --use-npm"
 
     4.  Run 'npm install concurrently -D"
-    4. Add script: `"client": "cd client && npm run start",' to serve package.json
- 
-    5.  Add script: `"start-dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",' to serve package.json
 
+    5. Add script: `"client": "cd client && npm run start",' to serve package.json
+ 
+    6.  Add script: `"start-dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",' to serve package.json
+
+    7. In order to make API calls to our backend development server, we have to add a proxy to our client side package.json. This is for local development only
+    "proxy": "http://localhost:3001",
+
+    8. Testing and validation
+        * Install axios in the client directory
+        * Make an API call to the "/api/config/" route and log it to the console.
 ## 
