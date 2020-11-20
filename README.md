@@ -52,3 +52,7 @@ This repository is meant to serve as a basic fullstack react application referen
         res.sendFile(path.join(__dirname, "./client/build/index.html"));
         });
 ````
+
+    11. npm run build
+
+    12. heroku create, and you should see after the build succeeds the api call being made successfully on the app.
