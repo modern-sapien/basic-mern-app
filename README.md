@@ -17,9 +17,9 @@ This repository is meant to serve as a basic fullstack react application referen
 
     4.  Run 'npm install concurrently -D"
 
-    5. Add script: `"client": "cd client && npm run start",' to serve package.json
+    5. Add script: `"client": "cd client && npm run start",' to server package.json
  
-    6.  Add script: `"start-dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",' to serve package.json
+    6.  Add script: `"start-dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",' to server package.json
 
     7. In order to make API calls to our backend development server, we have to add a proxy to our client side package.json. This is for local development only
     "proxy": "http://localhost:3001",
@@ -28,12 +28,12 @@ This repository is meant to serve as a basic fullstack react application referen
         * Install axios in the client directory
         * Make an API call to the "/api/config/" route and log it to the console.
 
-    9. Update the scripts object
+    9. Update the server scripts object
 ````javascript
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "start:prod": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "node server.js",
         "start:dev": "concurrently \"nodemon --ignore 'client/*\" \"npm run client\"",
         "client": "cd client && npm run start",
         "install": "cd client && npm install",
